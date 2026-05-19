@@ -217,3 +217,10 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 **/.streamlit/
+
+.DS_Store
+streamlit_test/data_exploration.ipynb
+
+games.csv
+games_cleaned.csv
+#games_recommender_clean.csv
