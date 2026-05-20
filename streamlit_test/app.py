@@ -2,11 +2,14 @@ import pandas as pd
 from openai import OpenAI
 import streamlit as st
 from streamlit_js_eval import streamlit_js_eval
+from pathlib import Path
 
 # Start by reading the data (games_recommender_clean.csv)
+DATA_PATH = Path(__file__).parent / "games_recommender_clean.csv"
+
 @st.cache_data
 def load_data():
-    return pd.read_csv("games_recommender_clean.csv")
+    return pd.read_csv(DATA_PATH)
 
 df = load_data()
 
