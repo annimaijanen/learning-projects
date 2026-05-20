@@ -6,6 +6,7 @@ from pathlib import Path
 
 # Start by reading the data (games_recommender_clean.csv)
 DATA_PATH = Path(__file__).parent / "games_recommender_clean.csv"
+ASSET_PATH = Path(__file__).parent / "assets" / "gamer_bot.png"
 
 @st.cache_data
 def load_data():
@@ -17,7 +18,7 @@ st.set_page_config(page_title="Streamlit Chat", page_icon="💬")
 
 col1, col2 = st.columns([6, 2])
 with col2:
-    st.image("assets/gamer_bot.png", width=150)
+    st.image(ASSET_PATH, width=150)
 
 with col1:
     st.title("Games Recommender")
@@ -289,7 +290,7 @@ if st.session_state.setup_complete and not st.session_state.feedback_shown and n
             avatar = None
 
             if message["role"] == "assistant":
-                avatar = "assets/gamer_bot.png"
+                avatar = str(ASSET_PATH)
 
             with st.chat_message(message["role"], avatar=avatar):
                 st.markdown(message["content"])
