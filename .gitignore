@@ -216,7 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
-**/.streamlit/
+streamlit_test/.streamlit/secrets.toml
+#**/.streamlit/
 
 .DS_Store
 streamlit_test/data_exploration.ipynb
