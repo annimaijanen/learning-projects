@@ -23,3 +23,21 @@ It recommends new games for the user based on their preferences.
 
 The application uses Steam game metadata and "About the game" descriptions
 to match games with the user's preferences.
+
+## Steam Games Metacritic Analysis
+
+Exploratory analysis and clustering on Steam games with Metacritic scores.
+
+### Topics
+
+- Statistics of Metacritic categories
+  (mean price, release year, amount of games, etc.)
+- Clustering to explore game types
+- PCA for visualization
+
+### Technology
+
+- Python
+- pandas
+- plotly
+- scikit-learn
