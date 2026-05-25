@@ -39,5 +39,5 @@ Exploratory analysis and clustering on Steam games with Metacritic scores.
 
 - Python
 - pandas
-- plotly
+- matplotlib
 - scikit-learn
