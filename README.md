@@ -6,6 +6,7 @@ Repository for learning and experimenting with LLM applications.
 
 This Streamlit app is a small game recommendation chatbot.
 It recommends new games for the user based on their preferences.
+Available here: https://games-recommender-bot.streamlit.app/
 
 ### Logic
 
